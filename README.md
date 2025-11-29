@@ -1,8 +1,8 @@
 # Non-Alcoholic Fatty Liver Disease Detection using ML
 
-A comprehensive machine learning pipeline for predicting Non-Alcoholic Fatty Liver Disease (NAFLD) using multiple classification algorithms.  This project evaluates 27 different machine learning models on a cirrhosis dataset to identify the best performing approach for disease detection.
+A comprehensive machine learning pipeline for predicting Non-Alcoholic Fatty Liver Disease (NAFLD) using multiple classification algorithms. This project evaluates 27 different machine learning models.
 
-## 📋 Overview
+## Overview
 
 This project implements a complete ML pipeline that:
 - Preprocesses clinical data with proper handling of missing values
@@ -10,7 +10,7 @@ This project implements a complete ML pipeline that:
 - Performs stratified cross-validation for robust performance estimation
 - Generates detailed performance reports in multiple formats (CSV, Excel, Markdown, LaTeX)
 
-## 🎯 Models Implemented
+## Models Implemented
 
 The pipeline includes the following model families:
 
@@ -40,7 +40,7 @@ The pipeline includes the following model families:
 - Subspace Discriminant
 - Subspace KNN
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 . 
@@ -57,7 +57,7 @@ The pipeline includes the following model families:
 └── TEAM.md                       # Project team information
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -88,7 +88,7 @@ python run_crossval.py
 python export_excel_report.py
 ```
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 The pipeline computes comprehensive metrics for each model:
 - **Accuracy (%)**: Overall classification accuracy
@@ -98,7 +98,7 @@ The pipeline computes comprehensive metrics for each model:
 - **Recall/Sensitivity (%)**: True Positive Rate
 - **Specificity (%)**: True Negative Rate
 
-## 🔬 Features
+## Features
 
 ### Data Preprocessing
 - Automatic handling of missing values (median for numeric, mode for categorical)
@@ -117,25 +117,25 @@ The pipeline computes comprehensive metrics for each model:
 - Markdown and LaTeX tables for publications
 - Color-coded performance visualization
 
-## 📈 Output Files
+## Output Files
 
 - **model_performance_comparison.csv**: Single train/test run results
 - **model_performance_comparison_cv.csv**: Cross-validation results with mean±std
 - **model_performance_report.xlsx**: Formatted Excel report with charts
 - **X_train_processed.npy / X_test_processed.npy**: Preprocessed feature matrices
 
-## 👥 Team
+## Team
 
 See [TEAM.md](TEAM.md) for the list of contributors. 
 
-## 📝 Notes
+## Notes
 
 - The target variable is binary: `Status == 'D'` (died) as positive class
 - Missing values are handled during preprocessing
 - Random state is set to 0 for reproducibility
 - Dataset path needs to be configured in each script (currently set to `/Users/dikshadamahe/Downloads/cirrhosis.csv`)
 
-## ⚙️ Configuration
+## Configuration
 
 Update the dataset path in the following files:
 - `paper_table_pipeline.py` (line 203)
@@ -146,10 +146,10 @@ Update the dataset path in the following files:
 src = Path('/path/to/your/cirrhosis.csv')
 ```
 
-## 🔍 Custom Implementation
+## Custom Implementation
 
 The project includes a custom **Kernel Naive Bayes** classifier that uses kernel density estimation for continuous features, providing an alternative to Gaussian Naive Bayes assumptions.
 
-## 📄 License
+## License
 
-This project is part of academic research on NAFLD detection. 
+This project is part of academic research on NAFLD detection.
